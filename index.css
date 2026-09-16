@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    padding: 22px;
+    background-color: lightgray;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.logout {
+    margin-top: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Top, Table, Bottom */
+.main {
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 10vh 65vh 25vh;
+    gap: 20px;
+}
+
+/* Các thành phần bên phải */
+.components {
+    width: 100%;
+    padding: 30px;
+}
+
+.bot {
+    background-color: lightcoral;
+}
+
+/* Top */
+.top {
+    display: flex;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.search {
+    flex: 1;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Table */
+.table {
+    background-color: lightgreen;
+}
