@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    background-color: #EFEFEF;
 }
 
 body {
@@ -9,18 +10,22 @@ body {
 
     display: grid;
     grid-template-columns: 350px 1fr;
-    gap: 20px;
+    gap: 10px;
 }
 
 /* Sidebar */
 .sidebar {
     height: 100%;
     padding: 22px;
-    background-color: lightgray;
+    background-color: white;
 
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+.sidebar-head {
+    background-color: white;
 }
 
 .logout {
@@ -31,6 +36,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    background-color: white;
 }
 
 /* Top, Table, Bottom */
@@ -39,7 +52,7 @@ body {
 
     display: grid;
     grid-template-rows: 10vh 65vh 25vh;
-    gap: 20px;
+    gap: 10px;
 }
 
 /* Các thành phần bên phải */
@@ -48,28 +61,95 @@ body {
     padding: 30px;
 }
 
-.bot {
-    background-color: lightcoral;
-}
-
 /* Top */
 .top {
     display: flex;
     align-items: center;
-    background-color: lightblue;
+    background-color: white;
+    gap: 20px;
 }
 
 .search {
     flex: 1;
+    background-color: white;
 }
 
-.actions {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.notification {
+    background-color: white;
+}
+
+.profile {
+    background-color: white;
 }
 
 /* Table */
 .table {
-    background-color: lightgreen;
+    height: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 8fr;
+    gap: 5px;
+}
+
+.table-1{
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.QL {
+    flex: 1;
+    font-size: 30px;
+    background-color: white;
+}
+
+.table-1-btn {
+    width: 100px;
+    height: 40px;
+}
+
+.table-2{
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    padding:10px;
+}
+
+.table-3 {
+    background-color: white;
+    padding: 20px;
+    overflow: auto;
+    width: 100%;
+}
+
+.table-3 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-3 th,
+.table-3 td {
+    padding: 10px 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.table-3 th {
+    background-color: #5b2df4;
+    color: white;
+}
+
+.table-3 td {
+    background-color: white;
+    color: black;
+}
+
+/* Bottom */
+
+.bot {
+    background-color: white;
 }
